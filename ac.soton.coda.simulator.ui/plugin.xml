@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="ac.soton.coda.viewCategory"
+            class="org.coda.simulator.ui.windowBuilder.SimulatorView"
+            id="org.coda.simulator.ui.windowBuilder.SimulatorView"
+            name="Simulator ">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="de.prob.ui.perspective">
+         <viewShortcut
+               id="org.coda.simulator.ui.windowBuilder.SimulatorView">
+         </viewShortcut>
+         <view
+               closeable="true"
+               id="org.coda.simulator.ui.windowBuilder.SimulatorView"
+               ratio="0.5"
+               relationship="bottom"
+               relative="de.prob.ui.StateView"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="org.coda.simulator.ui.contribution1"
+            objectClass="org.eventb.core.IMachineRoot">
+         <menu
+               id="org.coda.simulator.ui.menu1"
+               label="Simulation"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="org.coda.simulator.ui.popup.actions.StartSimAction"
+               enablesFor="1"
+               id="org.coda.simulator.ui.startSimAction"
+               label="Start"
+               menubarPath="org.coda.simulator.ui.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
