@@ -531,7 +531,7 @@ public class OracleHandler {
 		IFolder folder = getOracleFolder();
 
 		IPath filePath = folder.getFullPath();
-		filePath = filePath.append("/"+model.getURI().trimFileExtension().lastSegment());
+		filePath = filePath.append("/"+EcoreUtil.getURI(model).trimFileExtension().lastSegment());
 		filePath = filePath.addFileExtension(name);
 		filePath = filePath.addFileExtension(timestamp);
 		if (gold) filePath = filePath.addFileExtension("gold");
@@ -557,7 +557,7 @@ public class OracleHandler {
 	 */
 	private IFolder getOracleFolder() throws CoreException{
 		assert (model != null);
-		URI uri = model.getURI();
+		URI uri = EcoreUtil.getURI(model);
 		uri = uri.trimFileExtension();
 		uri = uri.trimSegments(1);
 		uri = uri.appendSegment("Oracle");
