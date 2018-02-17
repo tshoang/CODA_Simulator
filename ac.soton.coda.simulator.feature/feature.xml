@@ -17,7 +17,7 @@
       provider-name="%featureVendor"
       plugin="ac.soton.coda.simulator.branding"
       license-feature="ac.soton.coda.licence"
-      license-feature-version="1.1.2.release">
+      license-feature-version="1.1.1.release">
 
    <description>
       %featureDescription
