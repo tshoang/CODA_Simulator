@@ -24,10 +24,10 @@ Require-Bundle: org.eclipse.ui;bundle-version="[3.7.0,4.0.0)",
  ac.soton.eventb.emf.diagrams;bundle-version="[4.0.0,5.0.0)",
  ac.soton.eventb.statemachines;bundle-version="[4.0.0,5.0.0)",
  ac.soton.eventb.emf.components;bundle-version="[6.0.0,7.0.0)",
- ac.soton.eventb.emf.oracle;bundle-version="[1.0.0,2.0.0)"
+ ac.soton.eventb.emf.oracle;bundle-version="[1.0.0,2.0.0)",
+ org.eclipse.ui.forms;bundle-version="[3.7.1,4.0.0)"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
-Import-Package: org.eclipse.ui.forms.widgets
 Bundle-ClassPath: .,
  swing2swt.jar,
  swt-grouplayout.jar

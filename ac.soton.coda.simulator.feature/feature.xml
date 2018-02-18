@@ -27,6 +27,10 @@
       %featureCopyright
    </copyright>
 
+   <url>
+      <update label="%updateSiteName" url="http://rodin-b-sharp.sourceforge.net/updates"/>
+   </url>
+
    <requires>
       <import plugin="org.eclipse.ui" version="3.7.0" match="compatible"/>
       <import plugin="org.eclipse.ui.ide" version="3.7.0" match="compatible"/>
@@ -40,16 +44,14 @@
       <import plugin="de.prob.ui" version="7.2.0" match="compatible"/>
       <import plugin="org.rodinp.core" version="1.5.0" match="compatible"/>
       <import plugin="org.eventb.core" version="3.0.0" match="compatible"/>
+      <import plugin="org.eventb.emf.core" version="5.0.0" match="compatible"/>
       <import plugin="org.eventb.emf.persistence" version="3.0.0" match="compatible"/>
       <import plugin="ac.soton.eventb.emf.core.extension" version="4.0.0" match="compatible"/>
       <import plugin="ac.soton.eventb.emf.diagrams" version="4.0.0" match="compatible"/>
-      <import plugin="ac.soton.eventb.emf.oracle" version="1.0.0" match="compatible"/>
-      <import plugin="org.eclipse.ui.forms"/>
-      <import feature="de.prob2.feature" version="2.3.0" match="greaterOrEqual"/>
-      <import feature="ac.soton.eventb.components.feature" version="5.2.0.qualifier"/>
-      <import plugin="org.eventb.emf.core" version="5.0.0" match="compatible"/>
       <import plugin="ac.soton.eventb.statemachines" version="4.0.0" match="compatible"/>
       <import plugin="ac.soton.eventb.emf.components" version="6.0.0" match="compatible"/>
+      <import plugin="ac.soton.eventb.emf.oracle" version="1.0.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.forms" version="3.7.1" match="compatible"/>
    </requires>
 
    <plugin
